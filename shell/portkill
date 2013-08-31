@@ -1,0 +1,15 @@
+#!/bin/bash
+#########################3
+# syntax: portkill <fuser syntax> [arguments to kill]
+
+PGREP=$1
+
+shift
+
+PIDS=$(fuser $PGREP)
+if [[ $? != "0" ]]; then
+    echo "No processes found"
+    exit 1
+fi
+
+kill $@ $PIDS
