@@ -1,0 +1,6 @@
+#!/bin/bash
+###############################################################################
+# Simple installation script to create link in vim configuration
+
+ln -s ${HOME}/config/shell/portkill ${HOME}/Bin/portkill
+ln -s ${HOME}/config/shell/mcflush ${HOME}/Bin/mcflush
