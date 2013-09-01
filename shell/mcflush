@@ -1,0 +1,14 @@
+#!/bin/bash
+#########################3
+# syntax: mcflush [hostname] [port]
+
+HOST=${1:-"localhost"}
+PORT=${2:-"11211"}
+
+echo -n "Flusing memcached [${HOST}:${PORT}] "
+echo "flush_all" | nc $HOST $PORT
+if [[ $? != "0" ]]; then
+    echo "[FAILED]"
+    exit 1
+fi
+
