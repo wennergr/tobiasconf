@@ -1,0 +1,63 @@
+[submodule "vim/.vim/bundle/asynccommand"]
+	path = vim/.vim/bundle/asynccommand
+	url = git://github.com/pydave/AsyncCommand.git
+[submodule "vim/.vim/bundle/gundo"]
+	path = vim/.vim/bundle/gundo
+	url = git://github.com/sjl/gundo.vim.git
+[submodule "vim/.vim/bundle/fugitive"]
+	path = vim/.vim/bundle/fugitive
+	url = git://github.com/pydave/vim-fugitive.git
+[submodule "vim/.vim/bundle/gitv"]
+	path = vim/.vim/bundle/gitv
+	url = git://github.com/pydave/gitv.git
+[submodule "vim/.vim/bundle/tlib"]
+	path = vim/.vim/bundle/tlib
+	url = git://github.com/tomtom/tlib_vim.git
+[submodule "vim/.vim/bundle/mw-utils"]
+	path = vim/.vim/bundle/mw-utils
+	url = git://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "vim/.vim/bundle/ctrlp"]
+	path = vim/.vim/bundle/ctrlp
+	url = git://github.com/kien/ctrlp.vim.git
+[submodule "vim/.vim/bundle/ctrlp-funky"]
+	path = vim/.vim/bundle/ctrlp-funky
+	url = git://github.com/pydave/ctrlp-funky.git
+[submodule "vim/.vim/bundle/ctrlp-register"]
+	path = vim/.vim/bundle/ctrlp-register
+	url = git://github.com/mattn/ctrlp-register.git
+[submodule "vim/.vim/bundle/NrrwRgn"]
+	path = vim/.vim/bundle/NrrwRgn
+	url = git://github.com/chrisbra/NrrwRgn.git
+[submodule "vim/.vim/bundle/eunuch"]
+	path = vim/.vim/bundle/eunuch
+	url = git://github.com/pydave/vim-eunuch.git
+[submodule "vim/.vim/bundle/pathogen"]
+	path = vim/.vim/bundle/pathogen
+	url = git://github.com/pydave/vim-pathogen.git
+[submodule "vim/.vim/bundle/powerline"]
+	path = vim/.vim/bundle/powerline
+	url = git://github.com/pydave/vim-powerline.git
+[submodule "vim/.vim/bundle/powerline-sanity"]
+	path = vim/.vim/bundle/powerline-sanity
+	url = git://github.com/pydave/powerline-sanity.git
+[submodule "vim/.vim/bundle/TailMinusF"]
+	path = vim/.vim/bundle/TailMinusF
+	url = git://github.com/pydave/TailMinusF.git
+[submodule "vim/.vim/bundle/notgrep"]
+	path = vim/.vim/bundle/notgrep
+	url = git://github.com/pydave/vim-notgrep.git
+[submodule "vim/.vim/bundle/LargeFile"]
+	path = vim/.vim/bundle/LargeFile
+	url = git://github.com/vim-scripts/LargeFile.git
+[submodule "vim/.vim/bundle/bufexplorer"]
+	path = vim/.vim/bundle/bufexplorer
+	url = git://github.com/vim-scripts/bufexplorer.zip.git
+[submodule "vim/.vim/bundle/sensible"]
+	path = vim/.vim/bundle/sensible
+	url = git://github.com/tpope/vim-sensible.git
+[submodule "vim/.vim/bundle/ctrlp-history"]
+	path = vim/.vim/bundle/ctrlp-history
+	url = git://github.com/pydave/ctrlp-history.git
+[submodule "vim/.vim/bundle/argumentative"]
+	path = vim/.vim/bundle/argumentative
+	url = git://github.com/PeterRincker/vim-argumentative.git
