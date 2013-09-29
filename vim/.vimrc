@@ -72,6 +72,7 @@ set report=0					" Notify of all whole-line changes
 set visualbell					" Use visual bell (no beep)
 set linebreak					" Show wrap at word boundaries and preface wrap with >>
 set showbreak=>>
+set list                        " Display whitespace special characters such as <tab>
 
 """ Buffers
 "set splitbelow                  " Make preview (and all other) splits appear at the bottom
