@@ -135,6 +135,10 @@ set wildmode=longest:list,full
 inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-x><C-o>
 
+let g:EclimCompletionMethod = 'omnifunc'
+let g:acp_enableAtStartup = 1
+
+
 " Use all complete options
 set completeopt=menu,preview,menuone
 " Note: we must choose between showfulltag and completeopt+=longest. See help.
@@ -236,18 +240,6 @@ endfor
 
 " Gundo -- visualize the undo tree
 nnoremap <F2> :GundoToggle<CR>
-
-" SuperTab
-let g:SuperTabDefaultCompletionType = 'context'
-let g:SuperTabMappingForward = '<c-space>'
-let g:SuperTabMappingBackward = '<s-c-space>'
-" supertab + eclim == java win
-let g:SuperTabDefaultCompletionTypeDiscovery = [
-            \ "&completefunc:<c-x><c-u>",
-            \ "&omnifunc:<c-x><c-o>",
-            \ ]
-let g:SuperTabLongestHighlight = 1
-let g:SuperTabMappingTabLiteral = '<tab>'
 
 " Eclim was trying to connect on startup because it sees loaded_taglist
 " Either one of these flags to fixed it, but now it doesn't happen anymore.

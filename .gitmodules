@@ -61,3 +61,6 @@
 [submodule "vim/.vim/bundle/argumentative"]
 	path = vim/.vim/bundle/argumentative
 	url = git://github.com/PeterRincker/vim-argumentative.git
+[submodule "vim/.vim/bundle/auto-save"]
+	path = vim/.vim/bundle/auto-save
+	url = https://github.com/vim-scripts/vim-auto-save

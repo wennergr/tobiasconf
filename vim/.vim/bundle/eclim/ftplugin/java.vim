@@ -249,5 +249,13 @@ if !exists(":Checkstyle")
 endif
 
 " }}}
+au InsertLeave * call AutoSave()
+
+function! AutoSave()
+    let was_modified = &modified
+    silent! wa
+    call asynccommand#run(eclim#lang#UpdateSrcFile('java'))
+endfunction
+
 
 " vim:ft=vim:fdm=marker
