@@ -65,5 +65,8 @@
 	path = vim/.vim/bundle/auto-save
 	url = https://github.com/vim-scripts/vim-auto-save
 [submodule ".vim/bundle/golden-ratio"]
-	path = .vim/bundle/golden-ratio
+	path = vim/.vim/bundle/golden-ratio
+	url = git://github.com/roman/golden-ratio.git
+[submodule "vim/.vim/bundle/golden-ratio"]
+	path = vim/.vim/bundle/golden-ratio
 	url = git://github.com/roman/golden-ratio.git
