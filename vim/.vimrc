@@ -322,6 +322,12 @@ let g:Powerline#Segments#ctrlp#segments#next = ''
 let g:notgrep_no_mappings = 1
 
 "}}}
+" Abbreviations   {{{1
+"
+iab <expr> __date strftime("%F")                " Date in iso8601 format (2013-06-12)
+iab <expr> __datez strftime("%FT%z")            " Date in iso8601 format (with timezone) (2013-06-12T+0100)
+iab <expr> __datetime strftime("%FT%T")         " Date time in iso8601 format (2013-06-12T12:45:12)
+iab <expr> __datetimez strftime("%FT%T%z")      " Date time in iso8601 format (with timezone) (2013-06-12T12:45:12+0100)
 
-
+"}}}
 
