@@ -1,0 +1,15 @@
+#!/bin/bash
+###############################################################################
+# Installation script to link in shell scripts
+
+set -e
+
+if [ ! -n "${TOBIAS_CONF}" ]; then
+    echo "Run <SCRIPT_HOME>/vars before executing this file"
+    exit 1
+fi
+
+echo "Installing..."
+
+ln -svf ${SCRIPT_HOME}/vim/.vim/ ${HOME_DIR}/.vim
+ln -svf ${SCRIPT_HOME}/vim/.vimrc ${HOME_DIR}/.vimrc
