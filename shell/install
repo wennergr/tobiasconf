@@ -1,6 +1,15 @@
 #!/bin/bash
 ###############################################################################
-# Simple installation script to create link in vim configuration
+# Installation script to link in shell scripts
 
-ln -s ${HOME}/config/shell/portkill ${HOME}/Bin/portkill
-ln -s ${HOME}/config/shell/mcflush ${HOME}/Bin/mcflush
+set -e
+
+if [ ! -n "${TOBIAS_CONF}" ]; then
+    echo "Run <SCRIPT_HOME>/vars before executing this file"
+    exit 1
+fi
+
+echo "Installing..."
+
+ln -svf ${SCRIPT_HOME}/shell/portkill ${HOME_DIR}/Bin/portkill
+ln -svf ${SCRIPT_HOME}/shell/mcflush ${HOME_DIR}/Bin/mcflush

@@ -1,0 +1,14 @@
+#!/bin/bash
+################################################################################
+# Define variables for scripts tobiasconf
+
+# Just verification that this file has been ran only
+export TOBIAS_CONF=1
+
+# Home directory to install to
+export HOME_DIR=${HOME}
+
+# Base dir for tobiasconf
+export SCRIPT_HOME=${HOME_DIR}/base
+
+
