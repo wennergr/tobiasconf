@@ -1,6 +1,6 @@
 #!/bin/bash
 ###############################################################################
-# Installation script to link in shell scripts
+# Installation script to link in vim config
 
 set -e
 
