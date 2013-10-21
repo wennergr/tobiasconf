@@ -31,6 +31,7 @@ import XMonad.Hooks.DynamicLog
 import XMonad.Actions.Plane
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.UrgencyHook
+import XMonad.Hooks.ManageHelpers (isFullscreen, isDialog,  doFullFloat, doCenterFloat) 
 import qualified XMonad.StackSet as W
 import qualified Data.Map as M
 import Data.Ratio ((%))
@@ -263,6 +264,7 @@ myManagementHooks = [
   , (className =? "Empathy") --> doF (W.shift "7:Chat")
   , (className =? "Pidgin") --> doF (W.shift "7:Chat")
   , (className =? "Vlc") --> doF (W.shift "9:Movie")
+  , isFullscreen --> (doF W.focusDown <+> doFullFloat)
   ]
 
 
@@ -341,7 +343,7 @@ main = do
   , normalBorderColor = myNormalBorderColor
   , terminal = myTerminal
   , borderWidth = myBorderWidth
-  , layoutHook = myLayouts
+  , layoutHook = smartBorders(myLayouts)
   , workspaces = myWorkspaces
   , modMask = myModMask
   , handleEventHook = fullscreenEventHook
