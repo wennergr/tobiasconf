@@ -14,3 +14,4 @@ echo "Installing..."
 ln -svf ${SCRIPT_HOME}/shell/portkill ${HOME_DIR}/Bin/portkill
 ln -svf ${SCRIPT_HOME}/shell/mcflush ${HOME_DIR}/Bin/mcflush
 ln -svf ${SCRIPT_HOME}/shell/hrun ${HOME_DIR}/Bin/hrun
+ln -svf ${SCRIPT_HOME}/shell/.bashrc ${HOME_DIR}/.bashrc
