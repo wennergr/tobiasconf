@@ -133,6 +133,13 @@ alias tojson='python -mjson.tool'
 alias gbls=git_order_branch_list
 
 alias vim="vim --servername localhost:0"
-
 alias join="awk -v ORS=',' '{print}' | sed 's/,$//'"
+
+alias rgrep="find . -iname \"$1\" -exec grep -iHn --color=always \"$2\" {} \;"
+
+# Set current java version to java7 (oracle)
+export JAVA_HOME=/usr/lib/jvm/java-7-oracle
+
+# Set current java version to java8 (oracle)
+# export JAVA_HOME=/usr/lib/jvm/java-8-oracle
 
