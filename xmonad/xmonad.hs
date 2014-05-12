@@ -259,11 +259,15 @@ myManagementHooks :: [ManageHook]
 myManagementHooks = [
   resource =? "synapse" --> doIgnore
   , resource =? "stalonetray" --> doIgnore
+  , resource =? "jetbrains-idea" --> doF (W.shift "5:Dev")
+  , resource =? "Clipext" --> doIgnore
   , className =? "rdesktop" --> doFloat
   , (className =? "Eclipse") --> doF (W.shift "5:Dev")
   , (className =? "Empathy") --> doF (W.shift "7:Chat")
   , (className =? "Pidgin") --> doF (W.shift "7:Chat")
   , (className =? "Vlc") --> doF (W.shift "9:Movie")
+  , (className =? "Steam") --> (doFloat <+> doIgnore)
+  , (className =? "steam") --> doFullFloat
   , isFullscreen --> (doF W.focusDown <+> doFullFloat)
   ]
 
