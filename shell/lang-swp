@@ -1,0 +1,20 @@
+#!/bin/bash
+###############################################################################
+# Script to swap between two languages
+# Also loads the xmodmap file
+
+LANG1=us
+LANG2=se
+
+function set_lang {
+    setxkbmap $1
+
+    test -f ~/.Xmodmap && xmodmap ~/.Xmodmap
+}
+
+if [ `setxkbmap -print | grep xkb_symbols | awk '{print $4}' | awk -F"+" '{print $2}'` = $LANG1 ]
+then 
+    set_lang $LANG2
+else 
+    set_lang $LANG1
+fi
